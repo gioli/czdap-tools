@@ -106,6 +106,7 @@ class czdsDownloader(object):
                 f.write(chunk)
 
         os.rename(outputFile, finalOutputFile)
+        print hData['zone'] + " downloaded"
 
     def fetch(self):
         directory = self.prepareDownloadFolder()
